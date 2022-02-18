@@ -3,6 +3,12 @@ Ole is a class, subclass of [MInimal JSON](https://github.com/ralfstx/minimal-js
 
 ## Basic Ole
 It is a JsonObject with a META field that contains semantic data about its content.
-- OLE-ID. An alphanumeric hash code of the object 
-- TYPE. An enum type wich describe the type/subtype of Ole objects. Every subtype is also a JsonObject with specific inputs and values
-- ![image](https://user-images.githubusercontent.com/9058636/154640288-e59462e1-e0b9-429b-87a1-02aafbd39896.png)
+- OLE-ID: An alphanumeric hash code of the object 
+- TYPE: An enum type wich describe the type/subtype of Ole objects. Every subtype is also a JsonObject with specific inputs and values
+ ![image](https://user-images.githubusercontent.com/9058636/154640288-e59462e1-e0b9-429b-87a1-02aafbd39896.png)
+- DATE: date of creation
+- DESCRIPTION: a short explanation of the object
+- FIELDS: List of net objects, wich could be a String, an Integer, a Double, a Boolean a nested Ole, or an array of all the previous types
+
+
+
