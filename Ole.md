@@ -10,5 +10,22 @@ It is a JsonObject with a META field that contains semantic data about its conte
 - DESCRIPTION: a short explanation of the object
 - FIELDS: List of net objects, wich could be a String, an Integer, a Double, a Boolean a nested Ole, or an array of all the previous types
 
+## OleFile
+It provides the framework for translating any file, either binary or ascii, into a serializable, and therefore, easy to transmit, Ole Object
 
-
+````
+ 	OleFile ()
+ 	Basic constructor. It defines the specific fields of this object.
+ 
+ 	OleFile (Ole o)
+ 	Copy constructor. More...
+ 
+OleFile 	loadFile (String fullfilename)
+ 	It takes the binary (byte[]) content of any file, dump it as an integer Json Array. It encapsulates not only the binary content (key "filedata") but also the original filename (key "filename", just the filename, without the path to it. More...
+ 
+boolean 	saveFile (String outputfolder)
+ 	Given an encapsulated binary file obtained with the method data.OleFile#loadFile(java.lang.String) it saves the image exactly with the concatenation of the name encapsulated in it, and the path specified in. More...
+ 
+String 	getFileName ()
+ 	Retunrs the filename embedded into a OleFile object. More...
+````
