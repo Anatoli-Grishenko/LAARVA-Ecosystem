@@ -10,8 +10,9 @@ It is a JsonObject with a META field that contains semantic data about its conte
 - DESCRIPTION: a short explanation of the object
 - FIELDS: List of net objects, wich could be a String, an Integer, a Double, a Boolean a nested Ole, or an array of all the previous types
 
+
 ## OleFile
-It provides the framework for translating any file, either binary or ascii, into a serializable, and therefore, easy to transmit, Ole Object
+It provides the framework for translating any file, either binary or ascii, into a serializable, and therefore, easy to transmit, Ole Object. It can be combined with encription capabilities to safely transmit/store encrypted files
 
 ````
  	OleFile ()
@@ -29,3 +30,8 @@ boolean 	saveFile (String outputfolder)
 String 	getFileName ()
  	Retunrs the filename embedded into a OleFile object. More...
 ````
+
+## OleTable
+It provides support for labeled tables, in which all the rows have the same structure and there is a row of labels, one for each column, that can be used to access all elements of the table
+| |Label0|Label1|
+
