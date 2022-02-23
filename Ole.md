@@ -35,3 +35,34 @@ String 	getFileName ()
 It provides support for labeled tables, in which all the rows have the same structure and there is a row of labels, one for each column, that can be used to access all elements of the table
 | |Label0|Label1|
 
+## OleCOnfig & OleDialog
+
+It provides support for managing regular options of a project, storing/loading on disk, editing on Swing, etc, by using either pure JSON format or the extended OleCOnfig format. In either case, once loaded from disk, through the inherited method Ole.loadFile()
+
+### Types of fields
+An extension of JSON types. with extra capabilities
+- Integer
+- Double
+- String
+   - Regular strings
+   - File names
+   - Folder names
+   - From a list of valid values 
+- Boolean
+- Sets of strings
+
+
+### Simplest case
+````
+{
+    "Hostname": "isg2.ugr.es",
+    "Port": 1099,
+    "SSH": true
+}
+````
+
+![image](https://user-images.githubusercontent.com/9058636/155308122-580e22a7-f6eb-46ba-89ec-7391532cf8b3.png)
+
+
+
+
