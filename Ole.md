@@ -61,8 +61,6 @@ An extension of JSON types. with extra capabilities
 }
 ````
 
-![image](https://user-images.githubusercontent.com/9058636/155308122-580e22a7-f6eb-46ba-89ec-7391532cf8b3.png)
-
-
+![image](https://user-images.githubusercontent.com/9058636/155308735-ac67277a-1f92-4799-a920-013c5fb7dc33.png)
 
 
