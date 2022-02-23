@@ -52,8 +52,30 @@ An extension of JSON types. with extra capabilities
 - Sets of strings
 
 
-### Simplest case
+
+## Examples
+In all of them, the config file is loaded and edited within a Java Dialog
 ````
+    String filename = "config_simplest.json";
+    OleConfig ocfg;
+    ocfg = new OleConfig();
+    ocfg.loadFile(filename);
+    OleDialog odiag = new OleDialog(null, filename);
+    if (odiag.run(ocfg)) {
+        System.out.println("Aceptado. Guardando datos");
+        ocfg = odiag.getResult();
+        ocfg.saveAsFile("./", filename, true);
+     } else {
+        System.out.println("Cancelado. No se guardarán los datos");
+     }
+````
+
+
+### Simplest case
+
+
+````
+file: config.simplest.json
 {
     "Hostname": "isg2.ugr.es",
     "Port": 1099,
