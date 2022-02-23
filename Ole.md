@@ -77,7 +77,7 @@ In all of them, the config file is loaded and edited within a Java Dialog
 ````
 file: config.simplest.json
 {
-    "Hostname": "isg2.ugr.es",
+    "Hostname": "localhost",
     "Port": 1099,
     "SSH": true
 }
@@ -186,3 +186,7 @@ To group several fields from the inside of a tab.
 ![image](https://user-images.githubusercontent.com/9058636/155315876-f9dc7920-de12-4ae8-a721-867bab17f11e.png)
 
 
+### Support for flowlayout in groups and tabs
+For defining a fluid grid of components all along the frame of the Dialog
+
+![image](https://user-images.githubusercontent.com/9058636/155317166-2f7b26de-e38c-49da-99b1-665f7f78c704.png)
