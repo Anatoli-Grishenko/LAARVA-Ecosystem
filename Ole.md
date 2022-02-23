@@ -143,4 +143,46 @@ Each field/option/tab can have a customized help message that appears when the m
 ```` 
 ![image](https://user-images.githubusercontent.com/9058636/155313943-22738a74-865b-4bf6-8772-cb378e133874.png)![image](https://user-images.githubusercontent.com/9058636/155314359-283fda71-50ff-48b4-9006-273a8e6c91c3.png)
 
+### Using groups
+To group several fields from the inside of a tab.
+````
+{
+    "options": {
+        "Conection": {
+            "Host": {
+                "Hostname": "localhost",
+                "Port": 1099
+            },
+            "SSH": true
+        },
+        "Documents": {
+            "Executive summary": "exec.pdf"
+        }
+    },
+    "properties": {
+        "Conection": {
+            "tooltip": "Connect to the main server"
+        },
+        "Hostname": {
+            "tooltip": "String. Name of the server"
+        },
+        "Port": {
+            "tooltip": "Integer. Name of the server"
+        },
+        "SSH": {
+            "tooltip": "Boolean. Activate SSH tunnel"
+        },
+        "Documents": {
+            "tooltip": "String. Files to upload"
+        },
+        
+        "Host":{
+            "columns":2,
+            "border":true
+        }
+    }
+}
+````
+![image](https://user-images.githubusercontent.com/9058636/155315876-f9dc7920-de12-4ae8-a721-867bab17f11e.png)
+
 
