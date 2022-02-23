@@ -53,7 +53,7 @@ An extension of JSON types. with extra capabilities
 
 
 
-## Examples
+### Simple examples
 In all of them, the config file is loaded and edited within a Java Dialog
 ````
     String filename = "config_simplest.json";
@@ -71,7 +71,7 @@ In all of them, the config file is loaded and edited within a Java Dialog
 ````
 
 
-### Simplest case
+#### Simplest case
 
 
 ````
@@ -84,5 +84,63 @@ file: config.simplest.json
 ````
 
 ![image](https://user-images.githubusercontent.com/9058636/155308735-ac67277a-1f92-4799-a920-013c5fb7dc33.png)
+
+#### Using different sections
+A config file might contain diferent subsections of options. Each of them is displayed as a tab
+
+````
+file: config.tabs.json
+{
+    "Conexion": {
+        "Hostname": "localhost",
+        "Port": 1099,
+        "SSH": true
+    },
+    "Documents": {
+        "Executive summary": "exec.pdf"
+    }
+}
+````
+![image](https://user-images.githubusercontent.com/9058636/155310888-6565e37e-babc-4279-93a3-5655d97dead4.png) ![image](https://user-images.githubusercontent.com/9058636/155310974-b98479d0-8483-41b7-8cbc-4bee0f54d074.png)
+
+
+
+
+### Personalization and tooltips
+Each field/option/tab can have a customized help message that appears when the mouse is over it.
+
+
+````
+{
+  "options": {
+    "Conection": {
+      "Hostname": "localhost",
+      "Port": 1099,
+      "SSH": true
+    },
+    "Documents": {
+      "Executive summary": "exec.pdf"
+    }
+  },
+  "properties": {
+    "Conection": {
+      "tooltip": "Connect to the main server"
+    },
+    "Hostname": {
+      "tooltip": "String. Name of the server"
+    },
+    "Port": {
+      "tooltip": "Integer. Name of the server"
+    },
+    "SSH": {
+      "tooltip": "Boolean. Activate SSH tunnel"
+    },
+    "Documents": {
+      "tooltip": "String. Files to upload"
+    }
+  }
+}
+```` 
+![image](https://user-images.githubusercontent.com/9058636/155313943-22738a74-865b-4bf6-8772-cb378e133874.png)![image](https://user-images.githubusercontent.com/9058636/155314359-283fda71-50ff-48b4-9006-273a8e6c91c3.png)
 
 
