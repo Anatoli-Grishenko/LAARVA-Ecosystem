@@ -256,5 +256,115 @@ For defining a fluid grid of components all along the frame of the Dialog
 
 ### List of strings/file names/folder names
 A set of strings which can be edited (add/remove)
+````{
+  "options": {
+    "Conection": {
+      "Host": {
+        "Hostname": "localhost",
+        "Port": 1099
+      },
+      "SSH": true
+    },
+    "Documents": {
+      "Executive summary": "output.pdf",
+      "Folders": [
+        "logs/",
+        "build/classes/test2223/"
+      ]
+    }
+  },
+  "properties": {
+    "Conection": {
+      "tooltip": "Connect to the main server"
+    },
+    "Hostname": {
+      "tooltip": "String. Name of the server",
+      "select": [
+        "localhost",
+        "my.server.org",
+        "my.cloud.com"
+      ]
+    },
+    "Port": {
+      "tooltip": "Integer. Name of the server"
+    },
+    "SSH": {
+      "tooltip": "Boolean. Activate SSH tunnel"
+    },
+    "Documents": {
+      "tooltip": "String. Files to upload"
+    },
+    "Executive summary": {
+      "tooltip": "String. File to upload",
+      "file": ""
+    },
+    "Folders": {
+      "tooltip": "List of folders",
+      "listtype": "folder"
+    },
+    "Host": {
+      "columns": 2,
+      "border": true
+    }
+  }
+}
+````
+![image](https://user-images.githubusercontent.com/9058636/155478801-48664fdd-3fbf-4442-bbe1-9eb1a1c829e3.png)
+
+### Including HTM labels
+````
+{
+    "options": {
+        "Conection": {
+            "Host": {
+                "Hostname": "localhost",
+                "Port": 1099
+            },
+            "SSH": true
+        },
+        "Documents": {
+            "label1":"<html><b>Formatted labels</b><br><i>Labels can be used with HTML tags. More info at <a href=\"https://github.com/Anatoli-Grishenko/LARVA-Ecosystem/edit/main/Ole.md\">Git Hub</a></i></html>",
+            "Executive summary": "output.pdf",
+            "Folders": []
+        }
+    },
+    "properties": {
+        "Conection": {
+            "tooltip": "Connect to the main server"
+        },
+        "Hostname": {
+            "tooltip": "String. Name of the server",
+            "select": [
+                "localhost",
+                "my.server.org",
+                "my.cloud.com"
+            ]
+        },
+        "Port": {
+            "tooltip": "Integer. Name of the server"
+        },
+        "SSH": {
+            "tooltip": "Boolean. Activate SSH tunnel"
+        },
+        "Documents": {
+            "tooltip": "String. Files to upload"
+        },
+        "Executive summary": {
+            "tooltip": "String. File to upload",
+            "file": ""
+        },
+        "Folders": {
+            "tooltip": "List of folders",
+            "listtype": "folder"
+        },
+        "Host": {
+            "columns": 2,
+            "border": true
+        }
+    }
+}
+````
+
+
 
 
