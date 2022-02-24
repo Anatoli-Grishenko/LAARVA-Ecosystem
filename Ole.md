@@ -147,7 +147,7 @@ Each field/option/tab can have a customized help message that appears when the m
 
 
 
-### Using groups
+### Grouping options or fields
 To group several fields from the inside of a tab.
 ````
 {
@@ -194,3 +194,62 @@ To group several fields from the inside of a tab.
 For defining a fluid grid of components all along the frame of the Dialog
 
 ![image](https://user-images.githubusercontent.com/9058636/155317166-2f7b26de-e38c-49da-99b1-665f7f78c704.png)
+
+### Select value from within a predefined list (Combobox)
+````
+       "Hostname": {
+            "tooltip": "String. Name of the server",
+            "select":["localhost","my.server.org","my.cloud.com"]
+        }
+````
+![image](https://user-images.githubusercontent.com/9058636/155470404-8e4d4e9e-4d95-4aa5-96a5-c1652ffcaf7f.png)
+
+
+### Select a file or folder
+````
+{
+  "options": {
+    "Conection": {
+      "Host": {
+        "Hostname": "localhost",
+        "Port": 1099
+      },
+      "SSH": true
+    },
+    "Documents": {
+      "Executive summary": "output.pdf"
+    }
+  },
+  "properties": {
+    "Conection": {
+      "tooltip": "Connect to the main server"
+    },
+    "Hostname": {
+      "tooltip": "String. Name of the server",
+      "select": [
+        "localhost",
+        "my.server.org",
+        "my.cloud.com"
+      ]
+    },
+    "Port": {
+      "tooltip": "Integer. Name of the server"
+    },
+    "SSH": {
+      "tooltip": "Boolean. Activate SSH tunnel"
+    },
+    "Documents": {
+      "tooltip": "String. Files to upload"
+    },
+    "Executive summary": {
+      "tooltip": "String. File to upload",
+      "file": ""
+    },
+    "Host": {
+      "columns": 2,
+      "border": true
+    }
+  }
+}
+````
+![image](https://user-images.githubusercontent.com/9058636/155471544-074e2784-cfba-4972-803b-357a5264e489.png)
