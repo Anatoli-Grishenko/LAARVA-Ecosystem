@@ -91,7 +91,7 @@ A config file might contain diferent subsections of options. Each of them is dis
 ````
 file: config.tabs.json
 {
-    "Conexion": {
+    "Conection": {
         "Hostname": "localhost",
         "Port": 1099,
         "SSH": true
@@ -100,9 +100,11 @@ file: config.tabs.json
         "Executive summary": "exec.pdf"
     }
 }
+}
 ````
-![image](https://user-images.githubusercontent.com/9058636/155310888-6565e37e-babc-4279-93a3-5655d97dead4.png) ![image](https://user-images.githubusercontent.com/9058636/155310974-b98479d0-8483-41b7-8cbc-4bee0f54d074.png)
 
+![Captura de pantalla 2022-02-24 07:06:52](https://user-images.githubusercontent.com/9058636/155467637-4cae81e0-6e3c-44c2-b516-92fd9bf632be.png) 
+![Captura de pantalla 2022-02-24 07:07:04](https://user-images.githubusercontent.com/9058636/155467650-f09f9ada-7447-4b0c-b40d-c8f16a526a92.png)
 
 
 
@@ -130,7 +132,7 @@ Each field/option/tab can have a customized help message that appears when the m
       "tooltip": "String. Name of the server"
     },
     "Port": {
-      "tooltip": "Integer. Name of the server"
+      "tooltip": "Integer. Communcation port"
     },
     "SSH": {
       "tooltip": "Boolean. Activate SSH tunnel"
@@ -141,7 +143,9 @@ Each field/option/tab can have a customized help message that appears when the m
   }
 }
 ```` 
-![image](https://user-images.githubusercontent.com/9058636/155313943-22738a74-865b-4bf6-8772-cb378e133874.png)![image](https://user-images.githubusercontent.com/9058636/155314359-283fda71-50ff-48b4-9006-273a8e6c91c3.png)
+![image](https://user-images.githubusercontent.com/9058636/155468945-8c72c91b-24b0-4ee4-80f6-7a2e451f98f7.png) ![image](https://user-images.githubusercontent.com/9058636/155469047-389d98c5-34d2-4a18-8572-ce84a531ca49.png)
+
+
 
 ### Using groups
 To group several fields from the inside of a tab.
