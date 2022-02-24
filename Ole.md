@@ -364,6 +364,7 @@ A set of strings which can be edited (add/remove)
     }
 }
 ````
+![Captura de pantalla 2022-02-24 08:43:10](https://user-images.githubusercontent.com/9058636/155480371-466db9bf-b50d-4cf3-954f-1346b8aebbc6.png)
 
 
 
