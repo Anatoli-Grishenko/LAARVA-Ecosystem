@@ -253,3 +253,8 @@ For defining a fluid grid of components all along the frame of the Dialog
 }
 ````
 ![image](https://user-images.githubusercontent.com/9058636/155471544-074e2784-cfba-4972-803b-357a5264e489.png)
+
+### List of strings/file names/folder names
+A set of strings which can be edited (add/remove)
+
+
